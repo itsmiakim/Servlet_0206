@@ -30,7 +30,6 @@ public class Ex03Controller extends HttpServlet{
 		
 		String yearString = birthday.substring(0, 4);
 		int year = Integer.parseInt(yearString);
-		
 		int age = 2023 - year + 1;
 		
 //		out.println("<html><head><title>get method</title></head><body>");

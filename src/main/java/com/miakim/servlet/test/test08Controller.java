@@ -23,7 +23,7 @@ public class test08Controller extends HttpServlet {
 		
 		// 검색어를 입력받고 submit 할 수 있는 html 문서 작성
 		
-		String words = request.getParameter("words");
+		String words1 = request.getParameter("words");
 		
 		List<String> list = new ArrayList<>(Arrays.asList(
 		        "강남역 최고 맛집 소개 합니다.",
@@ -34,7 +34,8 @@ public class test08Controller extends HttpServlet {
 		
 		for(int i = 0; i < list.size(); i++) {
 			String result = list.get(i); 
-			if(result.contains(words)) {
+			if(result.contains(words1)) {
+				result = result.replace(words1, "<b>" + words1 +"</b>");
 				out.println(result + "<hr>");
 			}
 		}
