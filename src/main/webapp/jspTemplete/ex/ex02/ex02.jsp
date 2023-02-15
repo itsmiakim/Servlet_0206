@@ -10,21 +10,25 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+ 		
+ 		<link rel="stylesheet" href="/jspTemplete/ex/ex02/style.css" type="text/css">
 </head>
 <body>
-	<div class="container">
-	
-	<h1>메뉴검색</h1>	
-	<form method="get" action="/jsp/test/test07.jsp">
-		<div class="d-flex col-4 p-0">
-			<input type="text" class="form-control  col-4" name="menu">
-			<label class="col-8"><input type="checkbox" name="point">4점이하 제외</label>
-		</div>
+ 
+ 	<div id="wrap" >
+		<jsp:include page="header.jsp" />
 		
-		<button type="submit" class="btn btn-info">검색</button>
-		</div>
-	</form>
-
+		<jsp:include page="menu.jsp" />
+		<section class="contents">
+			<img alt="하트" width="100%" src="https://cdn.pixabay.com/photo/2023/01/22/14/47/love-7736559_640.jpg">
+			<div>철창 속 하트</div>
+		</section>
+		<jsp:include page="footer.jsp" />
+ 	</div>
+ 
+ 	<%-- 사용이 안됨
+ 		<%= dateString %>
+ 	 --%>
+ 
 </body>
 </html>

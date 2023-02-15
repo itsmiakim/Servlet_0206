@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#wrap{
+	width:1200px;
+	height:800px;
+	margin: auto;
+}
+
+header{
+	height:100px;
+}
+
+.main-menu {
+	height:40px;
+}
+
+.contents{
+	height:500px;
+}
+
+footer{
+	height:70px;
+}

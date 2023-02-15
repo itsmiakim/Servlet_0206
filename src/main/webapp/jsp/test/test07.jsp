@@ -52,13 +52,13 @@
 			%>
 					
 			<tr>	
-			<% if(menu.equals(store.get("menu")) && point.equals("on")) { %>	
+			<% if(menu.equals(store.get("menu"))) { %>	
 				<td><%= store.get("menu") %></td>
 				<td><%= store.get("name") %></td>
 				<td><%= store.get("point")%></td>
 			</tr>
-					<% } %>
-			<% } %>
+					<% } 
+			 } %>
 		</tbody>
 		
 	</table>

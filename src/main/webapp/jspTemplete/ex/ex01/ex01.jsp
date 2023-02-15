@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<% page import="java.util*"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,11 +8,10 @@
 </head>
 <body>
 
-	<%
-	List<String> goodsList = Arrays.asList(new String[]{ 
-		    "저지방 우유", "요플레 4개", "딸기 1팩", "삼겹살 300g", "생수 6개", "주방 세제"
-		});
-	%>
-
+	<h1> 현재 시간</h1>
+	
+	<%-- 현재 시간을 보여준다 (정적방식)--%>
+	<%@ include file="date.jsp" %>
+	
 </body>
 </html>
